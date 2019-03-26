@@ -1,0 +1,118 @@
+body {
+  font-family: arial, sans-serif;
+}
+
+/* Header */
+.header {
+  text-align: right;
+  padding: 8px 20px;
+}
+
+.header-link {
+  font-size: 13px;
+  color: black;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  text-decoration: underline;
+  opacity: .85;
+}
+
+.header-link:nth-child(2) {
+  margin-left: 10px;
+}
+
+.header-options {
+  position: relative;
+  padding: 0 25px;
+}
+
+.header-options::before {
+  content: url('./menu.svg');
+  position: absolute;
+  top: -2.5px;
+  left: 15px;
+}
+
+.header-btn button {
+  background-color: #4387fd;
+  border-color: #4387fd;
+  margin-left: 10px;
+  padding: 0px 10px;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 28px;
+  border-radius: 2px;
+}
+
+
+/* Body */
+.body {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.body img {
+  transform: scale(.5);
+}
+
+form {
+  margin-bottom: 30px;
+}
+
+.search-field {
+  position: relative;
+  margin-top: -25px;
+  width: 500px;
+  min-width: 400px;
+  height: 40px;
+  border-width: 1px;
+  border-radius: 20px;
+}
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-wrapper::after {
+  content: url('./googlemic.png');
+  position: absolute;
+  transform: scale(.5) translate(-100px);
+  top: -15px;
+}
+
+.btn-group button {
+  font-size: 14px;
+  color: #5F6368;
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+  line-height: 27px;
+  padding: 0 15px;
+  border-radius: 3px;
+  margin: 0 3px 20px;
+}
+
+.body p {
+  font-size: 13px;
+  color: #222;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #f2f2f2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+.footer-location, .footer-legal {
+  margin: 0 30px;
+}
+
+.footer-location p {
+  color: rgba(0,0,0,.54);
+}
